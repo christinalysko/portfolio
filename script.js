@@ -143,6 +143,18 @@ img.onmouseout = function(){
     fineText.style.display = "none";
 }
 
+// for hovering on bodoni
+var img = document.getElementById("bodoni");
+var a = document.getElementById('bodoniText');
+img.onmouseover = function(){
+    bodoniText.style.display = "block";
+}
+// for hovering pt2 fine
+var img = document.getElementById("bodoni");
+var a = document.getElementById('bodoniText');
+img.onmouseout = function(){
+    bodoniText.style.display = "none";
+}
 
 
 console.log('is this working?')

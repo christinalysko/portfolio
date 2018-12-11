@@ -92,13 +92,28 @@ li {
     position: fixed;
     max-width:200px;
     z-index: 2;
-    right: 5%;
+    right: 2%;
     top: 270px;
     display:none;}
 
+.hideLeft{
+    position: fixed;
+    max-width:200px;
+    z-index: 2;
+    left: 2%;
+    top: 270px;
+    display:none;}
 
+ /* WHEN THE WIDTH IS >1400, PICTURE DESCRIPTIONS DONT SHOW IN MARGINS */
 
- /* WHEN THE WIDTH IS >1400, PICTURE DESCRIPTIONS DONT SHOW */
+    @media (max-width: 1400px){
+        .hide {display: none !important;}
+    }
+
+    
+    @media (max-width: 1400px){
+        .hideLeft {display: none !important;}
+    }
 
 
 .column, .columns {
