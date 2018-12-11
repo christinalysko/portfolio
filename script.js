@@ -115,4 +115,34 @@ var boxid = "myModal";
     document.getElementById(boxid).style.display="none";
   }}
 
+
+// for hovering on chew
+var img = document.getElementById("chew");
+var a = document.getElementById('chewText');
+img.onmouseover = function(){
+    chewText.style.display = "block";
+    
+}
+// for hovering pt2 chew
+var img = document.getElementById("chew");
+var a = document.getElementById('chewText');
+img.onmouseout = function(){
+    chewText.style.display = "none";
+}
+
+// for hovering on fine
+var img = document.getElementById("fine");
+var a = document.getElementById('fineText');
+img.onmouseover = function(){
+    fineText.style.display = "block";
+}
+// for hovering pt2 fine
+var img = document.getElementById("fine");
+var a = document.getElementById('fineText');
+img.onmouseout = function(){
+    fineText.style.display = "none";
+}
+
+
+
 console.log('is this working?')

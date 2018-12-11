@@ -6,41 +6,79 @@
 #849974 - fresh
 #36384C - charcoal
 
-*/ 
- 
+ /* scroll bar */
+
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background:#E3BAB3; 
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(0, 0, 0); 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #36384C; 
+  }
+
+
+.nav{
+    z-index: 100;
+    position: fixed;
+    left: 20px;
+    bottom: 5px;
+}
+
+.navContent{
+    padding:20px ;
+    color: white;
+}
+
 li {
     font-size: .7em;
 }
 
-.title {position:fixed;
+.title {
+    position:fixed;
     right:0;
     top:0;
-    margin: 0px 0px auto auto;
+    margin: 0px 0px;
     width:50%;
     z-index:3;
+    background-color: #e9dccd;
 }
 
-#lysko {width:50%;
-float:right;
-padding: 20px;
-padding-left: 40%;
-padding-right:10%;
-background-color: #e9dccd;}
+#lysko {
+    width:50%;
+    max-width:200px;
+    float:right;
+    padding: 20px;
+    padding-left: 40%;
+    padding-right:10%;}
 
-#bar {
-float:right;}
+#bar {width:100%;
+    float:right;
+    margin-bottom:-400px;}
 
-.bottom {position:fixed;
-left: 0;
-bottom: 0;
-width: 50%;
-z-index: 3;
-transform: scaleX(-1);
--webkit-transform:rotate(180deg);
--moz-transform:rotate(180deg);
--o-transform:rotate(180deg);
--ms-transform:rotate(180deg);
-transform:rotate(180deg);}
+.bottom {
+    position:fixed;
+    left: 0;
+    bottom: 0;
+    width: 50%;
+    z-index: 3;
+    transform: scaleX(-1);
+    -webkit-transform:rotate(180deg);
+    -moz-transform:rotate(180deg);
+    -o-transform:rotate(180deg);
+    -ms-transform:rotate(180deg);
+    transform:rotate(180deg);}
 
   
   @media (max-width:550px) {
@@ -48,6 +86,19 @@ transform:rotate(180deg);}
       .bottom {width:100%;}
       .container {margin-top:40%;}
   }
+/* THINGS FOR MAKING THE IMAGE DESCRIPTIONS SHOW UP */
+
+.hide{
+    position: fixed;
+    max-width:200px;
+    z-index: 2;
+    right: 5%;
+    top: 270px;
+    display:none;}
+
+
+
+ /* WHEN THE WIDTH IS >1400, PICTURE DESCRIPTIONS DONT SHOW */
 
 
 .column, .columns {
@@ -79,7 +130,7 @@ body {background-color: #e9dccd;}
     .modal {
         display: none; /* Hidden by default */
         position: fixed; /* Stay in place */
-        z-index: 4; /* Sit on top */
+        z-index: 101; /* Sit on top */
         padding-top: 5%; /* Location of the box */
         left: 0;
         top: 0;
@@ -87,7 +138,7 @@ body {background-color: #e9dccd;}
         height: 100%; /* Full height */
         overflow: auto; /* Enable scroll if needed */
         background-color: rgba(56, 31, 37); /* Fallback color */
-        background-color: rgba(56, 31, 37, 0.7); /* Color w/ opacity */
+        background-color: rgba(56, 31, 37, 0.9); /* Color w/ opacity */
     }
     
     /* Modal Content (image) */
@@ -113,9 +164,9 @@ body {background-color: #e9dccd;}
     /* Add Animation */
     #caption {    
         -webkit-animation-name: slidein;
-        -webkit-animation-duration: 5s!important;
+        -webkit-animation-duration: 4s!important;
         animation-name: slidein;
-        animation-duration: 5s!important;
+        animation-duration: 4s!important;
     }
 
     .modal-content {
